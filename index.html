@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solkraftgruppen</title>
+
+<style>
+    html {
+        overflow-x: hidden;
+        position: relative;
+    }
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url(sg-bg3.jpg);
+        background-color: #022d62;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        overflow-x: hidden;
+        overflow: hidden;
+        }
+    .ikon {
+        width: 1000px;
+        position: absolute;
+        right: 0;
+        top: -500px;
+        opacity: 0.08;
+        animation: snurr 60s linear infinite;
+        z-index: -1;
+        }
+    
+@keyframes snurr {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        color: #EC5E1E;
+    }
+}
+    
+    .logo {
+        width: 480px;
+    }
+    
+    h1 {
+        font-size: 30px;
+        color: #FFF;
+        font-weight: 600;
+        }
+    p {
+        color: #FFF;
+        font-size: 22px;
+        }
+    
+    a {
+        color: #FFF;
+    }
+    
+    img {
+        height: auto;
+    }
+    
+    .selskaper {
+        margin-top: 60px;
+    }
+    
+    .selskaper .logoer {
+        display: flex;
+        align-items: center;
+    }
+    
+    .selskaper img {
+        max-width: 150px;
+        margin-right: 25px;
+        padding-left: 25px;
+    }
+    
+    .selskaper .spacer {
+        color: #FFF;
+        font-size: 60px;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        
+        .ikon {
+            width: 500px;
+            top: -200px;
+            right: -200px;
+        }
+        
+        .logo {
+            width: 240px;
+        }
+        
+        h1 {
+            font-size: 20px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .selskaper img {
+            height: 22px;
+        }
+        
+    }
+    
+    </style>
+    
+</head>
+<body>
+    <img src="ikon.svg" class="ikon">
+    <div>
+        <img src="solkraftgruppen-logo.png" class="logo" alt="solkraftgruppen logo">
+        <h1>Vi pusser opp nettsiden vår</h1>
+    <div class="selskaper">
+        <p>Besøk oss her:</p>
+        <div class="logoer">
+        <img src="Apollotech.png">
+            <span class="spacer">/</span>
+        <img src="Powerrail.png">
+            <span class="spacer">/</span>
+        <img src="Solcellepartneren.png">
+        </div>
+    </div>
+        <a href="mailto:jag@solkraftgruppen.no">Kontakt oss</a>
+    </div>
+</body>
+</html>
