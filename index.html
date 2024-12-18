@@ -6,6 +6,7 @@
     <title>Solkraftgruppen</title>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     html {
         overflow-x: hidden;
         position: relative;
@@ -19,7 +20,7 @@
         margin: 0;
         background-image: url(sg-bg3.jpg);
         background-color: #022d62;
-        font-family: Arial, sans-serif;
+        font-family: "Lato", serif;
         text-align: center;
         overflow-x: hidden;
         overflow: hidden;
@@ -86,6 +87,11 @@
         font-size: 60px;
     }
     
+    .mail {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
     @media only screen and (max-width: 800px) {
         
         .ikon {
@@ -107,7 +113,17 @@
         }
         
         .selskaper img {
-            height: 22px;
+            height: 18px;
+            margin-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .selskaper .spacer {
+            font-size: 30px;
+        }
+        
+        .mail {
+            margin-top: 30px;
         }
         
     }
@@ -119,18 +135,24 @@
     <img src="ikon.svg" class="ikon">
     <div>
         <img src="solkraftgruppen-logo.png" class="logo" alt="solkraftgruppen logo">
-        <h1>Vi pusser opp nettsiden vår</h1>
+        <h1>Vi pusser opp nettsiden vår.</h1>
     <div class="selskaper">
-        <p>Besøk oss her:</p>
+        <p>Besøk oss midlertidig her:</p>
         <div class="logoer">
-        <img src="apollotech.png">
+        <a href="https://apollotech.no/">
+            <img src="Apollotech.png">
+        </a>
             <span class="spacer">/</span>
-        <img src="powerrail.png">
+        <a href="https://sagstuen.no/produkter/solcellerekkverk">
+            <img src="Powerrail.png">
+        </a>
             <span class="spacer">/</span>
-        <img src="solcellepartneren.png">
+        <a href="https://solcellepartneren.no/">
+            <img src="Solcellepartneren.png">
+        </a>
         </div>
     </div>
-        <a href="mailto:jag@solkraftgruppen.no">Kontakt oss</a>
+        <a href="mailto:jag@solkraftgruppen.no" class="mail">Kontakt oss</a>
     </div>
 </body>
 </html>
